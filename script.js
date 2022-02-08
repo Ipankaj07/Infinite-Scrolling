@@ -2,7 +2,7 @@ let content = document.getElementById('content');
 
 let items = [];
 
-for (let i = 1; i <= 48; i++) {
+for (let i = 1; i <= 72; i++) {
     items.push('<div class="li" >Item ' + i + '</div>');
 }
 
@@ -16,7 +16,7 @@ let scroll = function () {
 
     let itemCount = content.getElementsByClassName('li').length;
 
-    if (rect.bottom <= window.innerHeight) {
+    if (rect.bottom <= window.innerHeight + 100) {
         let newItems = [];
         for (let i = 1; i <= 24; i++) {
             newItems.push('<div class="li">Item ' + (itemCount + i) + '</div>');
