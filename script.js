@@ -2,7 +2,7 @@ let content = document.getElementById('content');
 
 let items = [];
 
-for (let i = 1; i <= 24; i++) {
+for (let i = 1; i <= 48; i++) {
     items.push('<div class="li" >Item ' + i + '</div>');
 }
 
